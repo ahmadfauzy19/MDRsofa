@@ -44,6 +44,24 @@
             color: #fff !important; /* Paksa semua elemen dengan kelas ini menjadi putih */
         }
 
+        .responsive-iframe {
+            position: relative;
+            width: 100%; /* Iframe akan mengikuti lebar kontainer */
+            padding-bottom: 56.25%; /* Rasio aspek 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .responsive-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+
 
     </style>
 </head>
@@ -318,8 +336,11 @@
         
                             <!-- Kolom untuk Google Maps -->
                             <div class="col-lg-6 mt-4 mt-lg-0">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4185852912296!2d107.3787792!3d-6.339794799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e697790e34f498f%3A0x70b16d9b72baf958!2sSERVIS%20SOFA%20KARAWANG%20(%20MDR%20SOFA)!5e0!3m2!1sid!2sid!4v1731860680592!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
+                                <div class="responsive-iframe">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4185852912296!2d107.3787792!3d-6.339794799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e697790e34f498f%3A0x70b16d9b72baf958!2sSERVIS%20SOFA%20KARAWANG%20(%20MDR%20SOFA)!5e0!3m2!1sid!2sid!4v1731860680592!5m2!1sid!2sid"
+                                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                 </section>
